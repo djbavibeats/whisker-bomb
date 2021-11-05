@@ -2,9 +2,6 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
-      "settings": {
-        "desktop_text_box_position": "flex-end"
-      },
       "blocks": {
         "heading": {
           "type": "heading",
@@ -14,9 +11,11 @@
         }
       },
       "block_order": [
-        "heading",
-        "button"
-      ]
+        "heading"
+      ],
+      "settings": {
+        "desktop_text_box_position": "flex-end"
+      }
     },
     "featured_products": {
       "type": "featured-collection",
