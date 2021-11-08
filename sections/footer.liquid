@@ -240,11 +240,9 @@
           </div>
           <div class="footer__copyright caption">
             <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}. All rights reserved.</small>
-            <small class="copyright__content">| {{ "Terms of Use" | link_to: routes.root_url }}</small>
             {% for policy in shop.policies %}
               <small class="copyright__content">| {{ policy.title | link_to: policy.url }}</small>
             {% endfor %}
-            {% comment %} <small class="copyright__content">{{ powered_by_link }}</small> {% endcomment %}
           </div>
           <div class="footer-socials">
           {%- if section.settings.show_social -%}
