@@ -8,6 +8,11 @@
     src: url("franklin_gothic_book.ttf") format("TrueType");
 }
 
+@font-face {
+    font-family: "Blackoak";
+    src: url("BlackoakStd.otf") format("opentype");
+}
+
 #MainContent {
     margin-top: -180px;
 }
@@ -77,3 +82,47 @@
     color: white;
     text-align: left;
 }
+
+.title-wrapper-with-link {
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.title {
+    font-family: 'Blackoak';
+    color: #85754E;
+    font-size: 42px;
+}
+
+.separator-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gold-separator {
+    border-bottom: 1px solid #85754E;
+    height: 2px;
+    width: 100%;
+    display: block !important;
+}
+
+.separator-wrapper img {
+    padding: 0px 25px;
+    width: 110px;
+}
+
+#shopify-section-template--15352865882366__featured_products img {
+    object-fit: contain;
+}
+
+.card--outline:not(.card--soft) {
+    border: none !important; 
+    border-right: 2px dashed #85754E !important;
+
+}
+
+
+@media screen and (min-width: 990px) {
+    .grid--quarter-max.grid--4-col-desktop .grid__item {
+      max-width: 16%;
+    }
+  }
