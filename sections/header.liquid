@@ -115,7 +115,6 @@
         {%- endfor -%}
     </div>
     <div class="bottom-header-row">
-        {% comment %} <img class="bottom-header-logo" src="{{ section.settings.logo | img_url: image_size }}" /> {% endcomment %}
         <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
               loading="lazy"
@@ -126,7 +125,7 @@
             >
     </div>
   </header>
-  {% comment %} <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+  <header class="desktop-header-custom header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
 
 
     {%- if section.settings.menu != blank -%}
@@ -563,7 +562,7 @@
         {%- endif -%}
       </a>
     </div>
-  </header> {% endcomment %}
+  </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
