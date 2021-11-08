@@ -35,234 +35,353 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   } 
-
-#shopify-section-announcement-bar {
-    height: 35px;
-    background-color: #EB008B;
-}
-#MainContent {
-    margin-top: -180px;
-}
-
-.header-wrapper--border-bottom {
-    border-bottom: none;
-}
-
-.list-menu--inline {
-    flex-wrap: nowrap;
-    width: 300px;
-}
-
-.header {
-    grid-template-columns: 2fr 2fr 2fr;
-    height: 180px;
-}
-
-.header__icons {
-    align-items: center;
-}
-
-.icon-search {
-    display: none;
-}
-
-.header h2 {
-    font-family: "Amatic";
-}
-
-.header li a {
-    font-family: "Franklin Gothic Heavy";
-    color: #EB008B !important;
-    text-transform: uppercase;
-}
-
-.header li a span {
-    padding-right: 5px;
-}
-
-.header__menu-item {
-    padding-left: 0px;
-    padding-right: 5px;
-    font-size: 17px;
-}
-
-#Banner-template--15352865882366__image_banner {
-    height: 80vh; /* will need to make this number responsive */
-    border-bottom: 25px solid #85754E;
-}
-
-.banner__box {
-    background-color: transparent !important;
-    font-family: "Amatic";
-    position: absolute !important;
-    right: 0%;
-    top: 32.5%;
-    max-width: 55rem !important;
-}
-
-.banner__box h2 {
-    font-family: "Amatic";
-    color: white;
-    text-align: left;
-}
-
-.title-wrapper-with-link {
-    justify-content: center;
-    margin-bottom: 0px;
-}
-.title {
-    font-family: 'Blackoak';
-    color: #85754E;
-    font-size: 42px;
-}
-
-.separator-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gold-separator {
-    border-bottom: 1px solid #85754E;
-    height: 2px;
-    width: 100%;
-    display: block !important;
-}
-
-.separator-wrapper img {
-    padding: 0px 25px;
-    width: 110px;
-}
-
-#shopify-section-template--15352865882366__featured_products img {
-    object-fit: contain;
-}
-
-.card--outline:not(.card--soft) {
-    border: none !important; 
-    border-right: 2px dashed #85754E !important;
-
-}
-
-.card-information__text {
-    font-family: 'Franklin Gothic Heavy';
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-    margin: 0 auto;
-    word-wrap: break-word;
-}
-
-.price {
-    justify-content: center;
-    font-family: "Franklin Gothic Book";
-    font-size: 22px !important;
-}
-
-.quantity-row {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.quantity-row p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: 'Franklin Gothic Heavy';
-    color: black;
-    margin-right: 5px;
-}
-.quantity-row select {
-    width: auto;
-    border-radius: 0px;
-    border: 1.5px solid black;
-    padding: 0px;
-}
-
-.add-to-cart-btn {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    border: none;
-    background: #EB008B;
-    border-radius: 5px;
-    padding: 15px 0px;
-    font-family: "Franklin Gothic Heavy";
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-}
-@media screen and (min-width: 990px) {
-    .grid--quarter-max.grid--4-col-desktop .grid__item {
-      max-width: 16%;
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    .mobile-header-custom {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+        height: 50px;
+        width: 100vw;
     }
-  }
 
-  footer {
-      background: black !important;
-  }
+    .top-header-row {
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-footer h2 {
-    font-family: 'Blackoak';
-    color: #85754E;
-    font-size: 42px !important;
+    .top-header-row h2 {
+        font-family: 'Amatic';
+        text-align: center;
+        flex: 1;
+    }
+
+    .mobile-header-spacer {
+        flex: .25;
+        display: flex !important;
+    }
+
+    .header__icon--cart {
+        margin-right: 0px;
+    }
+
+    .mobile-cart-header {
+        flex: .25;
+        height: 100%;
+        justify-items: center;
+        background: #85754E;
+    }
+
+    .middle-header-row {
+        background: #EB008B;
+        display: flex;
+        justify-content: center;
+        margin-block-start: 0px !important;
+        padding-top: 0px;
+        padding-bottom:  0px;
+    }
+
+    .middle-header-row ul {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .middle-header-ul {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .middle-header-li {
+        display: inline-block;
+        text-align: center;
+        margin-left: 10px;
+        font-family: 'Franklin Gothic Heavy';
+        text-transform:uppercase;
+        color: black;
+        font-size: 18px;
+    }
+
+    .middle-header-li a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .bottom-header-row {
+        /* height: 75px; */
+        display: flex;
+        margin-top: -10px;
+    }
+
+    .bottom-header-logo {
+        /* width: 250px; */
+
+        width: 65%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #MainContent {
+        /* margin-top: 80px !important; */
+    }
+    #shopify-section-template--15352865882366__image_banner {
+        background: black;
+    }
+
+    .banner--medium.banner--mobile-bottom:not(.banner--adapt) > .banner__media {
+        margin-top: 150px;
+        height: 21rem !important;
+    }
+
+    .banner__box {
+        background: black !important;
+        font-family: 'Amatic';
+        padding: 0rem 6.5rem 2rem 6.5rem !important;
+    }
+
+    .banner__box h2 {
+        font-family: 'Amatic';
+        font-size: 20px;
+        color: white;
+    }
 }
 
-.footer__content-top {
-    background: black;
-    padding: 0px;
-    color: #85754E;
-    font-family: "Franklin Gothic Book";
-    font-size: 22px;
-}
-
-.footer__content-bottom {
-    background: #85754E;
-}
-
-.footer-bottom-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__copyright {
-    padding-left: 35px !important;
-    margin-top: -10px !important;
-    color: white;
-    font-size: 16px;
-}
-
-.footer-socials {
-    flex: 1;
-    justify-content: flex-end;
-}
-
-.footer__list-social.list-social:only-child {
-    justify-content: flex-end !important;
-}
-
-.field__input {
-    background: white;
-    border-radius: 5px;
-}
-.newsletter-form {
-    flex-direction: column !important;
-}
-
-.newsletter-form button {
-    width: 55%;
-    border: none;
-    background: #EB008B;
-    border-radius: 5px;
-    padding: 15px 0px;
-    font-family: "Franklin Gothic Heavy";
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    margin: 0 auto;
-    margin-top: 25px;
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    .mobile-header {
+        display: none;
+    }
+    #shopify-section-announcement-bar {
+        height: 35px;
+        background-color: #EB008B;
+    }
+    #MainContent {
+        margin-top: -180px;
+    }
+    
+    .header-wrapper--border-bottom {
+        border-bottom: none;
+    }
+    
+    .list-menu--inline {
+        flex-wrap: nowrap;
+        width: 300px;
+    }
+    
+    .header {
+        grid-template-columns: 2fr 2fr 2fr;
+        height: 180px;
+    }
+    
+    .header__icons {
+        align-items: center;
+    }
+    
+    .icon-search {
+        display: none;
+    }
+    
+    .header h2 {
+        font-family: "Amatic";
+    }
+    
+    .header li a {
+        font-family: "Franklin Gothic Heavy";
+        color: #EB008B !important;
+        text-transform: uppercase;
+    }
+    
+    .header li a span {
+        padding-right: 5px;
+    }
+    
+    .header__menu-item {
+        padding-left: 0px;
+        padding-right: 5px;
+        font-size: 17px;
+    }
+    
+    #Banner-template--15352865882366__image_banner {
+        height: 80vh; /* will need to make this number responsive */
+        border-bottom: 25px solid #85754E;
+    }
+    
+    .banner__box {
+        background-color: transparent !important;
+        font-family: "Amatic";
+        position: absolute !important;
+        right: 0%;
+        top: 32.5%;
+        max-width: 55rem !important;
+    }
+    
+    .banner__box h2 {
+        font-family: "Amatic";
+        color: white;
+        text-align: left;
+    }
+    
+    .title-wrapper-with-link {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .title {
+        font-family: 'Blackoak';
+        color: #85754E;
+        font-size: 42px;
+    }
+    
+    .separator-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gold-separator {
+        border-bottom: 1px solid #85754E;
+        height: 2px;
+        width: 100%;
+        display: block !important;
+    }
+    
+    .separator-wrapper img {
+        padding: 0px 25px;
+        width: 110px;
+    }
+    
+    #shopify-section-template--15352865882366__featured_products img {
+        object-fit: contain;
+    }
+    
+    .card--outline:not(.card--soft) {
+        border: none !important; 
+        border-right: 2px dashed #85754E !important;
+    
+    }
+    
+    .card-information__text {
+        font-family: 'Franklin Gothic Heavy';
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+        word-wrap: break-word;
+    }
+    
+    .price {
+        justify-content: center;
+        font-family: "Franklin Gothic Book";
+        font-size: 22px !important;
+    }
+    
+    .quantity-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .quantity-row p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Franklin Gothic Heavy';
+        color: black;
+        margin-right: 5px;
+    }
+    .quantity-row select {
+        width: auto;
+        border-radius: 0px;
+        border: 1.5px solid black;
+        padding: 0px;
+    }
+    
+    .add-to-cart-btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border: none;
+        background: #EB008B;
+        border-radius: 5px;
+        padding: 15px 0px;
+        font-family: "Franklin Gothic Heavy";
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 990px) {
+        .grid--quarter-max.grid--4-col-desktop .grid__item {
+          max-width: 16%;
+        }
+      }
+    
+      footer {
+          background: black !important;
+      }
+    
+    footer h2 {
+        font-family: 'Blackoak';
+        color: #85754E;
+        font-size: 42px !important;
+    }
+    
+    .footer__content-top {
+        background: black;
+        padding: 0px;
+        color: #85754E;
+        font-family: "Franklin Gothic Book";
+        font-size: 22px;
+    }
+    
+    .footer__content-bottom {
+        background: #85754E;
+    }
+    
+    .footer-bottom-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__copyright {
+        padding-left: 35px !important;
+        margin-top: -10px !important;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .footer-socials {
+        flex: 1;
+        justify-content: flex-end;
+    }
+    
+    .footer__list-social.list-social:only-child {
+        justify-content: flex-end !important;
+    }
+    
+    .field__input {
+        background: white;
+        border-radius: 5px;
+    }
+    .newsletter-form {
+        flex-direction: column !important;
+    }
+    
+    .newsletter-form button {
+        width: 55%;
+        border: none;
+        background: #EB008B;
+        border-radius: 5px;
+        padding: 15px 0px;
+        font-family: "Franklin Gothic Heavy";
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
 }
