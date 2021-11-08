@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Amatic";
+    src: url("AmaticSC-Bold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Franklin";
+    src: url("franklin_gothic_book.ttf") format("TrueType");
+}
+
+#MainContent {
+    margin-top: -180px;
+}
+
+.header-wrapper--border-bottom {
+    border-bottom: none;
+}
+
+.list-menu--inline {
+    flex-wrap: nowrap;
+    width: 300px;
+}
+
+.header {
+    grid-template-columns: 2fr 2fr 2fr;
+    height: 180px;
+}
+
+.header__icons {
+    align-items: center;
+}
+
+.icon-search {
+    display: none;
+}
+
+.header h2 {
+    font-family: "Amatic";
+}
+
+.header li a {
+    font-family: "Franklin Gothic Heavy";
+    color: #EB008B !important;
+    text-transform: uppercase;
+}
+
+.header li a span {
+    padding-right: 5px;
+}
+
+.header__menu-item {
+    padding-left: 0px;
+    padding-right: 5px;
+    font-size: 17px;
+}
+
+.header li a:nth-of-type(3) {
+    color: blue !important;
+}
+
+#Banner-template--15352865882366__image_banner {
+    height: 80vh; /* will need to make this number responsive */
+    border-bottom: 25px solid #85754E;
+}
+
+.banner__box {
+    background-color: transparent !important;
+    font-family: "Amatic";
+    position: absolute !important;
+    right: 0%;
+    top: 32.5%;
+    max-width: 55rem !important;
+}
+
+.banner__box h2 {
+    font-family: "Amatic";
+    color: white;
+    text-align: left;
+}
