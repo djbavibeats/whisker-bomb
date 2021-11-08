@@ -13,6 +13,9 @@
     src: url("BlackoakStd.otf") format("opentype");
 }
 
+.announcement-bar {
+    height: 75px;
+}
 #MainContent {
     margin-top: -180px;
 }
@@ -127,12 +130,46 @@
     text-align: center;
 }
 
-.card-information__wrapper .price {
-    text-align: center !important;
-    color: blue !important;
-    width: 100%;
+.price {
+    justify-content: center;
+    font-family: "Franklin Gothic Book";
+    font-size: 22px !important;
 }
 
+.quantity-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.quantity-row p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Franklin Gothic Heavy';
+    color: black;
+    margin-right: 5px;
+}
+.quantity-row select {
+    width: auto;
+    border-radius: 0px;
+    border: 1.5px solid black;
+    padding: 0px;
+}
+
+.add-to-cart-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: none;
+    background: #EB008B;
+    border-radius: 5px;
+    padding: 15px 0px;
+    font-family: "Franklin Gothic Heavy";
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
 @media screen and (min-width: 990px) {
     .grid--quarter-max.grid--4-col-desktop .grid__item {
       max-width: 16%;

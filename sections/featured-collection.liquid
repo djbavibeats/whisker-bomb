@@ -43,6 +43,24 @@
             show_image_outline: section.settings.show_image_outline,
             show_rating: section.settings.show_rating
           %}
+          <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+            <div class="quantity-row">
+              <p>QTY</p>
+              <select name='quantity' id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+            <input type="submit" value="Add to cart" class="add-to-cart-btn btn" />
+          </form>
         </li>
       {%- else -%}
         {%- for i in (1..6) -%}

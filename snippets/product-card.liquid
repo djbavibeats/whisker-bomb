@@ -16,7 +16,9 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+
 <div class="card-wrapper">
+  
   <div class="card-information">
     <div class="card-information__wrapper">
       {%- if show_vendor -%}
@@ -61,6 +63,7 @@
 
   <div class="card card--product{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
     <div class="card__inner">
+      
       {%- if product_card_product.featured_media -%}
         {%- liquid
           assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
@@ -110,14 +113,17 @@
               >
             {%- endif -%}
           </div>
+          
         </div>
       {%- else -%}
         <div class="card__content">
           <h2 class="card__text h3">
             <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
               {{ product_card_product.title }}
+              
             </a>
           </h2>
+          
         </div>
       {%- endif -%}
 
@@ -131,3 +137,6 @@
     </div>
   </div>
 </div>
+
+
+
