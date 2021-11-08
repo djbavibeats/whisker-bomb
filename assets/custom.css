@@ -373,7 +373,7 @@
         font-size: 17px;
     }
     
-    .banner .banner--medium .banner--mobile-bottom {
+    .banner.banner--medium.banner--mobile-bottom {
         height: 80vh; /* will need to make this number responsive */
         border-bottom: 25px solid #85754E;
     }
