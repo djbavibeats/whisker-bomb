@@ -13,6 +13,29 @@
     src: url("BlackoakStd.otf") format("opentype");
 }
 
+.page-width {
+    max-width: 1400px;
+}
+/* Main Header Layout */
+.header-wrapper {
+    display: block;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)) !important;
+  }
+  
+  .header-wrapper--border-bottom {
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  }
+  
+  .header {
+    display: grid;
+    grid-template-areas: 'left-icon heading icons';
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  } 
+
 #shopify-section-announcement-bar {
     height: 35px;
     background-color: #EB008B;
@@ -61,10 +84,6 @@
     padding-left: 0px;
     padding-right: 5px;
     font-size: 17px;
-}
-
-.header li a:nth-of-type(3) {
-    color: blue !important;
 }
 
 #Banner-template--15352865882366__image_banner {
@@ -129,6 +148,8 @@
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
+    margin: 0 auto;
+    word-wrap: break-word;
 }
 
 .price {
@@ -178,7 +199,7 @@
   }
 
   footer {
-      background: black;
+      background: black !important;
   }
 
 footer h2 {
@@ -209,7 +230,7 @@ footer h2 {
 
 .footer__copyright {
     padding-left: 35px !important;
-    margin-top: -10px;
+    margin-top: -10px !important;
     color: white;
     font-size: 16px;
 }
@@ -221,4 +242,27 @@ footer h2 {
 
 .footer__list-social.list-social:only-child {
     justify-content: flex-end !important;
+}
+
+.field__input {
+    background: white;
+    border-radius: 5px;
+}
+.newsletter-form {
+    flex-direction: column !important;
+}
+
+.newsletter-form button {
+    width: 55%;
+    border: none;
+    background: #EB008B;
+    border-radius: 5px;
+    padding: 15px 0px;
+    font-family: "Franklin Gothic Heavy";
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 25px;
 }
