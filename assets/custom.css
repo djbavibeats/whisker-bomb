@@ -13,8 +13,9 @@
     src: url("BlackoakStd.otf") format("opentype");
 }
 
-.announcement-bar {
-    height: 75px;
+#shopify-section-announcement-bar {
+    height: 35px;
+    background-color: #EB008B;
 }
 #MainContent {
     margin-top: -180px;
@@ -126,7 +127,7 @@
 .card-information__text {
     font-family: 'Franklin Gothic Heavy';
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -174,4 +175,8 @@
     .grid--quarter-max.grid--4-col-desktop .grid__item {
       max-width: 16%;
     }
+  }
+
+  footer {
+      background: black;
   }
