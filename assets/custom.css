@@ -181,7 +181,62 @@
         width: 110px;
     }
 
-
+    .card--outline:not(.card--soft) {
+        margin-top: 25px;
+        border: none !important; 
+        border-right: 2px dashed #85754E !important;
+    
+    }
+    
+    .card-information__text {
+        font-family: 'Franklin Gothic Heavy';
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        word-wrap: break-word;
+    }
+    
+    .price {
+        justify-content: center;
+        font-family: "Franklin Gothic Book";
+        font-size: 22px !important;
+    }
+    
+    .quantity-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .quantity-row p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Franklin Gothic Heavy';
+        color: black;
+        margin-right: 5px;
+    }
+    .quantity-row select {
+        width: auto;
+        border-radius: 0px;
+        border: 1.5px solid black;
+        padding: 0px;
+    }
+    
+    .add-to-cart-btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border: none;
+        background: #EB008B;
+        border-radius: 5px;
+        padding: 15px 0px;
+        font-family: "Franklin Gothic Heavy";
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
 
        
     footer {
@@ -420,7 +475,7 @@
         letter-spacing: 2px;
         font-size: 14px;
     }
-    
+
     .grid--quarter-max.grid--4-col-desktop .grid__item {
         max-width: 16%;
     }
