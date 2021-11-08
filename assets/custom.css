@@ -140,6 +140,10 @@
         height: 21rem !important;
     }
 
+    .banner:not(.banner--stacked) {
+        background: black !important;
+    }
+
     .banner__box {
         background: black !important;
         font-family: 'Amatic';
