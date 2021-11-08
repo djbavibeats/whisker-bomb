@@ -180,3 +180,26 @@
   footer {
       background: black;
   }
+
+footer h2 {
+    font-family: 'Blackoak';
+    color: #85754E;
+    font-size: 42px !important;
+}
+
+.footer__content-top {
+    background: black;
+    padding: 0px;
+    color: #85754E;
+    font-family: "Franklin Gothic Book";
+    font-size: 22px;
+}
+
+.footer__content-bottom {
+    background: #85754E;
+}
+
+.footer-bottom-row {
+    display: flex;
+    flex-direction: row;
+}
