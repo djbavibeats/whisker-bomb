@@ -108,10 +108,16 @@
       }
     {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'base.css' | asset_url | stylesheet_tag }}   
+
 
     {%- if template == "index" -%}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
+
+    {%- if template != "index" -%}
+    {{ 'custom-not-index.css' | asset_url | stylesheet_tag }}
+    <script>console.log("Okayh")</script>
     {%- endif -%}
 
 
