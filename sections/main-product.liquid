@@ -377,7 +377,42 @@
       </div>
     </div>
   </div>
-
+  <div class="sauce_details_container">
+    <h1 class="collection-hero__title">
+      SAUCE DETAILS
+    </h1>
+    <div class="separator-wrapper">
+      <div class="gold-separator"></div>
+      <img src="{{ 'lightning-bolt.png' | asset_img_url }}" />
+      <div class="gold-separator"></div>
+    </div>
+    <div class="long-description">
+      <p>
+      {{ product.description }}
+      </p>
+    </div>
+    <div class="weight">
+      NET WT. {{ product.variants.first.weight | weight_with_unit: "oz" }} ({{ product.variants.first.weight | weight_with_unit: "g" }})
+    </div>
+    <div class="ingredients_and_nutrition_wrapper">
+      <div class="ingredients_wrapper">
+        <h3>INGREDIENTS</h3>
+        <p class="ingredients_and_nutrition_list">
+          {{ product.metafields.my_fields.ingredients }}
+        </p>
+        {%- if product.metafields.my_fields.non_gmo  -%}
+          <p class="gold_text">NON-GMO</p>
+        {%- endif -%}
+        <p class="gold_text">HEAT METER: {{ product.metafields.my_fields.heat_meter }}</p>
+      </div>
+      <div class="nutrition_wrapper">
+        <h3>NUTRITION FACTS</h3>
+        <p class="ingredients_and_nutrition_list">
+          {{ product.metafields.my_fields.nutrition_facts }}
+        </p>
+      </div>
+    </div>
+  </div>
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
       <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>

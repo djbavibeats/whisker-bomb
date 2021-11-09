@@ -616,4 +616,67 @@
         align-items: center;
         font-family: 'Franklin Gothic Heavy';
     }
+
+    .product-form__quantity .form__label {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .sauce_details_container {
+        padding-top: 30px;
+        max-width: 900px;
+        margin: 0 auto;
+        /* border-top: 25px solid #85754E; */
+        /* width: 100vw; */
+    }
+
+    .long-description p, .weight {
+        text-align: center;
+        color: #85754E;
+    }
+
+    .long-description p {
+        font-family: 'Franklin Gothic Book';
+    }
+
+    .weight {
+        font-family: 'Franklin Gothic Heavy';
+        font-size: 14px;
+    }
+
+    .ingredients_and_nutrition_wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .ingredients_wrapper, .nutrition_wrapper {
+        flex: 1;
+    }
+
+    .ingredients_wrapper, .nutrition_wrapper p {
+        line-height: 1.2;
+    }
+
+    .ingredients_and_nutrition_list {
+        font-size: 14px;
+    }
+    .nutrition_wrapper {
+        padding-left: 30px;
+    }
+    .ingredients_wrapper {
+        border-right: 2px dashed #85754E !important;
+        padding-right: 30px;
+    }
+    .ingredients_and_nutrition_wrapper h3 {
+        font-family: 'Franklin Gothic Heavy';
+        color: #85754E;
+        font-size: 24px;
+    }
+
+    .ingredients_and_nutrition_wrapper .gold_text {
+        color: #85754E;
+        font-family: 'Franklin Gothic Heavy';
+        font-size: 12px;
+    }
 }
