@@ -560,18 +560,6 @@
     }
 
     /* Product Styles */
-    /* .media>img {
-        height: 20% !important;
-        width: 20% !important;
-        right: 0;
-        object-fit: contain;
-    }
-
-    .media model-viewer, .media>:not(.zoom):not(.deferred-media__poster-button) {
-        right: 0 !important;
-        left: none;
-    } */
-
     .product:not(.product — no-media) .product__media-wrapper {
         max-width: 30% !important;
         width: calc(30% — 1rem / 2) !important;
@@ -609,5 +597,23 @@
 
     .product .price {
         justify-content: flex-start !important;
+    }
+
+    .natural_and_gluten_free_container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .natural_and_gluten_free_container p {
+        margin-left: 5px;
+        font-family: 'Franklin Gothic Heavy';
+        color: #85754E;
+    }
+
+    .product-form__quantity {
+        display: flex;
+        align-items: center;
+        font-family: 'Franklin Gothic Heavy';
     }
 }

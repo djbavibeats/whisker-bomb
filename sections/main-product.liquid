@@ -104,11 +104,24 @@
               {%- endform -%}
             </div>
           {%- when 'description' -%}
-            {%- if product.description != blank -%}
+            {%- if product.metafields.my_fields.short_description != blank -%}
               <div class="product__description rte">
-                {{ product.description }}
+                {{ product.metafields.my_fields.short_description }}
               </div>
             {%- endif -%}
+            <div class="natural_and_gluten_free_container">
+            {%- for tag in product.tags -%}
+              {% if tag contains 'natural' and 'gluten_free' %}
+                <p>•</p>
+              {% endif %}
+              {%- if tag contains 'natural' -%}
+                <p> 100% NATURAL</p>
+              {%- endif -%}
+              {%- if tag contains 'gluten_free' -%}
+                <p>GLUTEN FREE</p>
+              {%- endif -%}
+            {%- endfor -%}
+            </div>
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
@@ -132,7 +145,7 @@
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
-                {{ 'products.product.quantity.label' | t }}
+                QTY.
               </label>
 
               <quantity-input class="quantity">
@@ -148,7 +161,7 @@
                     value="1"
                     form="{{ product_form_id }}"
                   >
-                <button class="quantity__button no-js-hidden" name="plus" type="button">
+                  <button class="quantity__button no-js-hidden" name="plus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
                   {% render 'icon-plus' %}
                 </button>
