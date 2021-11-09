@@ -121,6 +121,7 @@
         /* height: 75px; */
         display: flex;
         margin-top: -10px;
+        margin-bottom: 20px;
     }
 
     .bottom-header-logo {
@@ -556,5 +557,57 @@
         font-size: 14px;
         margin: 0 auto;
         margin-top: 25px;
+    }
+
+    /* Product Styles */
+    /* .media>img {
+        height: 20% !important;
+        width: 20% !important;
+        right: 0;
+        object-fit: contain;
+    }
+
+    .media model-viewer, .media>:not(.zoom):not(.deferred-media__poster-button) {
+        right: 0 !important;
+        left: none;
+    } */
+
+    .product:not(.product — no-media) .product__media-wrapper {
+        max-width: 30% !important;
+        width: calc(30% — 1rem / 2) !important;
+        background: none;
+        border: none;
+    }
+
+    .product:not(.product--no-media):not(.featured-product) .product__info-wrapper {
+        max-width: 30% !important;
+        width: calc(30% - 1rem / 2) !important;
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product__media-list .deferred-media, .product__media-list .product__modal-opener {
+        border: none !important;
+
+    }
+    
+    section > div > div.grid__item.product__media-wrapper > slider-component > ul{
+        justify-content: center;
+        border-right: 2px dashed #85754E !important;
+    }
+    
+    .product__title {
+        font-family: 'Franklin Gothic Heavy';
+        text-transform: uppercase;
+        font-size: 32px !important;
+        line-height: 1;
+    }
+
+    .product .price {
+        justify-content: flex-start !important;
     }
 }
