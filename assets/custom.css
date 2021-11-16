@@ -185,7 +185,7 @@
         width: 110px;
     }
 
-    .media > img {
+    img.motion-reduce, .media>img {
         object-fit: contain !important;
     }
 
