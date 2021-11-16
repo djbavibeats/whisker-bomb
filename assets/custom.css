@@ -186,7 +186,7 @@
     }
 
     img.motion-reduce {
-        object-fit: contain;
+        object-fit: contain !important;
     }
 
     .card--outline:not(.card--soft) {
