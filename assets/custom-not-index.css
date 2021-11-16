@@ -430,8 +430,8 @@
         object-fit: contain;
     }
 
-    img.motion-reduce {
-        object-fit: contain;
+    .card.card--product.card--outline, .card__inner, .card.card--product.card--outline > div {
+        /* max-height: 300px !important; */
     }
     
     .card--outline:not(.card--soft) {
