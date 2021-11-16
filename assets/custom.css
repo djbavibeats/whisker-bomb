@@ -185,6 +185,10 @@
         width: 110px;
     }
 
+    img.motion-reduce {
+        object-fit: contain;
+    }
+
     .card--outline:not(.card--soft) {
         margin-top: 25px;
         border: none !important; 
