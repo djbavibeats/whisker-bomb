@@ -429,6 +429,10 @@
     #shopify-section-template--15352865882366__featured_products img {
         object-fit: contain;
     }
+
+    .card.card--product.card--outline, .card__inner, .card.card--product.card--outline > div {
+        /* max-height: 300px !important; */
+    }
     
     .card--outline:not(.card--soft) {
         border: none !important; 
