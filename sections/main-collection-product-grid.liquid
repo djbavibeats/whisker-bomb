@@ -32,8 +32,8 @@
     {%- else -%}
       <div class="collection page-width">
         <div class="loading-overlay gradient"></div>
-        {% comment %} <style> #shopify-section-template--15352058773758__featured_products > div > slider-component > ul > li > div > div.card.card--product.card--outline > div > div > div > img { object-fit: contain !important; } </style> {% endcomment %}
-        <style>div > slider-component > ul > li > div > div.card.card--product.card--outline > div > div > div > img { object-fit: contain !important; }</style>
+        <style> .card > img { object-fit: contain !important; } </style>
+
         <ul id="product-grid" data-id="{{ section.id }}" class="
           grid grid--2-col negative-margin product-grid
           {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
