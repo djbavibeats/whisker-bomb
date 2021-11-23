@@ -250,6 +250,10 @@
         letter-spacing: 2px;
         font-size: 14px;
     }
+  
+  .shop-all-btn {
+    width: 250px;
+  }
 
        
     footer {
@@ -488,6 +492,10 @@
         letter-spacing: 2px;
         font-size: 14px;
     }
+
+    .shop-all-btn {
+    	width: 250px;
+  	}
 
     .grid--quarter-max.grid--4-col-desktop .grid__item {
         max-width: 16%;
