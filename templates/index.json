@@ -45,7 +45,7 @@
     "1637698923c398be55": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<button href=\"\/collections\/all\" style=\"margin: 0 auto;\" class=\"shop-all-btn\">Shop All Products<\/button>"
+        "custom_liquid": "<a href=\"\/collections\/all\" style=\"margin: 0 auto;\" class=\"shop-all-btn\">Shop All Products<\/a>"
       }
     }
   },
