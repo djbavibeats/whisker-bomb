@@ -244,7 +244,7 @@
         border: none;
         background: #EB008B;
         border-radius: 5px;
-        padding: 15px 10px;
+        padding: 15px 0px;
         font-family: "Franklin Gothic Heavy";
         color: #F2F3F4;
         text-transform: uppercase;
@@ -255,6 +255,7 @@
     .shop-all-btn {
       	width: 250px;
     	margin: 0 auto;
+      	text-decoration: none;
     }
 
        
@@ -498,6 +499,7 @@
     .shop-all-btn {
     	width: 250px;
       	margin: 0 auto;
+      	text-decoration: none;
   	}
 
     .grid--quarter-max.grid--4-col-desktop .grid__item {
