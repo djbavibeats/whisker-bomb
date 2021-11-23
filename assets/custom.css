@@ -251,9 +251,10 @@
         font-size: 14px;
     }
   
-  .shop-all-btn {
-    width: 250px;
-  }
+    .shop-all-btn {
+      	width: 250px;
+    	margin: 0 auto;
+    }
 
        
     footer {
@@ -495,6 +496,7 @@
 
     .shop-all-btn {
     	width: 250px;
+      	margin: 0 auto;
   	}
 
     .grid--quarter-max.grid--4-col-desktop .grid__item {
