@@ -236,7 +236,7 @@
         padding: 0px;
     }
     
-    .add-to-cart-btn {
+    .add-to-cart-btn, .shop-all-btn {
         display: flex;
         width: 100%;
         justify-content: center;
@@ -474,7 +474,7 @@
         padding: 0px;
     }
     
-    .add-to-cart-btn {
+    .add-to-cart-btn, .shop-all-btn {
         display: flex;
         width: 100%;
         justify-content: center;
