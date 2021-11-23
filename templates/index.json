@@ -41,10 +41,17 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1637698923c398be55": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<button class=\"shop-all-btn\">Shop All Products<\/button>"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_products"
+    "featured_products",
+    "1637698923c398be55"
   ]
 }
