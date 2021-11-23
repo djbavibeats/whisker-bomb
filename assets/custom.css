@@ -238,7 +238,8 @@
     
     .add-to-cart-btn, .shop-all-btn {
         display: flex;
-        width: 100%;
+        width: 85%;
+      	margin: 0 auto;
         justify-content: center;
         border: none;
         background: #EB008B;
