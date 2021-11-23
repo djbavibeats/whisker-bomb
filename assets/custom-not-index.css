@@ -172,7 +172,7 @@
     .banner__box h2 {
         font-family: 'Amatic';
         font-size: 20px;
-        color: white;
+        color: #F2F3F4;
     }
 
     .title-wrapper-with-link {
@@ -255,7 +255,7 @@
         border-radius: 5px;
         padding: 15px 0px;
         font-family: "Franklin Gothic Heavy";
-        color: white;
+        color: #F2F3F4;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 14px;
@@ -299,7 +299,7 @@
       /* padding-left: 35px !important; */
       margin-top: 10px !important;
       margin-bottom: 10px !important;
-      color: white;
+      color: #F2F3F4;
       font-size: 16px;
   }
   
@@ -327,7 +327,7 @@
       border-radius: 5px;
       padding: 15px 0px;
       font-family: "Franklin Gothic Heavy";
-      color: white;
+      color: #F2F3F4;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 14px;
@@ -489,7 +489,7 @@
         border-radius: 5px;
         padding: 15px 0px;
         font-family: "Franklin Gothic Heavy";
-        color: white;
+        color: #F2F3F4;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 14px;
@@ -532,7 +532,7 @@
     .footer__copyright {
         padding-left: 35px !important;
         margin-top: -10px !important;
-        color: white;
+        color: #F2F3F4;
         font-size: 16px;
     }
     
@@ -560,7 +560,7 @@
         border-radius: 5px;
         padding: 15px 0px;
         font-family: "Franklin Gothic Heavy";
-        color: white;
+        color: #F2F3F4;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 14px;
